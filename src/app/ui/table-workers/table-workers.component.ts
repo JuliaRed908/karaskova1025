@@ -57,7 +57,7 @@ export class TableWorkersComponent {
   }
 
   getIO(n,p){
-    let IO=n.substr(1,1)+"."+p.substr(1,1)+".";
+    let IO=n.substr(0,1).toUpperCase()+"."+p.substr(0,1).toUpperCase()+".";
     
     
     return IO;

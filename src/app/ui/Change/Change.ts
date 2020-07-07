@@ -3,7 +3,7 @@ import {
   MyWorker,
   MyWorkerType
  } from 'src/app/shared/worker.model';
-import { AgeService } from 'src/app/shared/age.service';
+
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Service } from 'src/app/shared/worker.service';
 import { Router } from '@angular/router';
@@ -104,7 +104,7 @@ export class ChangeFormComponent implements OnInit {
     this.CangeTelephone=this.OpenWorker.telephone;
     this.type=this.OpenWorker.type;
     this.CangeGroup=this.OpenWorker.group;
-    this.CangeAge=this.getAge(this.CangeDate);
+    
 
     this.onChange=true;
   }
@@ -113,37 +113,11 @@ export class ChangeFormComponent implements OnInit {
     this.onChange=false;
   }
 
-  UpdateAge(Dr){
-    this.CangeAge=this.getAge(Dr);
-  }
+  
 
-  getAge(Dr){
-    let date=new Date;
-    let year:number;
-    let month:number;
-    let day:number;
-    let count=0;
-    let i=-1;
-    while (count!=2){
-      i++;
-      if (Dr.slice(i,i+1)=="-"){
-        count++;
-        if (count==1){year=Dr.slice(0,i);}
-        if (count==2){
-          month=Dr.slice(year.toString().length+1,i);
-          day=Dr.slice(i+1,i+3);
-        }
-      }
-    }
-    let age=date.getFullYear()-year;
-    if (date.getMonth()+1<month){age--;}
-    else if ((date.getMonth()+1==month)&&(date.getDate()<day)){age--;}
-
-    return age;
-  }
+  
 
   onSubmitChanges() {
-    let age=new AgeService();
     
       this.onChange=false;
       let push:MyWorker=this.ChangeForm.value;

@@ -1,26 +1,48 @@
 {
   "workers": [
     {
-      "name": "yrty",
-      "surname": "tyrty",
-      "date": "2020-07-08",
-      "patronimic": "ryrty",
-      "email": "tryrty@gfdfg.fdg",
-      "telephone": "+5(345) 454-3545",
-      "group": "181-324",
+      "name": "Наталья",
+      "surname": "Лукьянова",
+      "date": "1999-02-03",
+      "patronimic": "Сергеевна",
+      "email": "dfdsfsd@fdf.fdf",
+      "telephone": "+3(434) 534-5345",
+      "group": "191-323",
       "type": 0,
-      "id": 27
+      "id": 29
     },
     {
-      "name": "gfhfgh",
-      "surname": "ghgfh",
-      "patronimic": "yiuiuyi",
-      "date": "2020-07-01",
-      "email": "ftgdfg@fgg.dfg",
-      "group": null,
-      "id": 28,
+      "name": "Сергей",
+      "surname": "Шиянов",
+      "date": "2014-06-19",
+      "patronimic": "Александрович",
+      "email": "hjgdf@fdf.fd",
+      "telephone": "+4(534) 534-5345",
+      "group": "191-343",
       "type": 2,
-      "telephone": "+4(534) 534-5345"
+      "id": 30
+    },
+    {
+      "name": "Федор",
+      "surname": "Такойто",
+      "date": "2019-12-11",
+      "patronimic": "Алексеевич",
+      "email": "gdfgdf@gdfsgf.fom",
+      "telephone": "+5(345) 345-3453",
+      "group": "192-233",
+      "type": 3,
+      "id": 31
+    },
+    {
+      "name": "Андрей",
+      "surname": "Андреевич",
+      "date": "2019-06-09",
+      "patronimic": "Андреев",
+      "email": "fgdfg@fsdd.fd",
+      "telephone": "+3(243) 423-4234",
+      "group": "192-323",
+      "type": 0,
+      "id": 32
     }
   ]
 }

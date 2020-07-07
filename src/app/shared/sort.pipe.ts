@@ -1,6 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core';
 import { MyWorker } from './worker.model';
-import { AgeService } from './age.service';
+
 
 @Pipe({
   name: 'sort'
@@ -9,12 +9,12 @@ export class SortPipe implements PipeTransform {
 
   res:number = 1;
 
-  transform(workerList, search1,filterID,filterAge){
+  transform(workerList, search1,filterID,filterAlf){
     let res=this.sort(workerList);
     let search=this.sort(search1)
 
     
-    console.log(search.group);
+    
 
     if (search.group != null){
       res = res.filter(
@@ -39,7 +39,7 @@ export class SortPipe implements PipeTransform {
     
 
     res=this.filterID(res,filterID);
-    res=this.filterAge(res,filterAge);
+    res=this.filterAlf(res,filterAlf);
     
     return res;
 }
@@ -55,6 +55,7 @@ return search
 
   filterID(workerList,filterID){
   let res=workerList
+  console.log(res);
   if (filterID == 1) {
     res.sort(function(a,b){
       return a.id - b.id
@@ -68,33 +69,47 @@ return search
   return res;
   }
 
+
+  filterAlf(workerList,filterAlf){
+    let res=workerList
+    
+    
+    if (filterAlf == 1) {
+      res.sort(function(a,b){
+        if (a.surname.substr(0,1) > b.surname.substr(0,1)) 
+       return -1;
+       if (a.surname.substr(0,1) < b.surname.substr(0,1))
+        return 1;
+        })
+
+    }
+
+
+    if (filterAlf == 2){
+      res.sort(function(a,b){
+        if (a.surname.substr(0,1) < b.surname.substr(0,1)) 
+    return -1;
+    if (a.surname.substr(0,1) > b.surname.substr(0,1))
+     return 1;
+    })
+    
+    }
+    return res;}
+
+    
+    
   // filterA(workerList,filterA){
   //     let Alf=["А","Б","В","Г","Д","Е","Ё","Ж","З","И","К","Л","М","Н","О","П","Р","С","Т","У","Ф","Х","Ц","Ч","Ш","Щ","Э","Ю","Я"];
   //     let res=workerList
 
   //     res.sort(function(a,b){
         
-  //       return Alf[surname.substr(1,1)];
+  //       return Alf[MyWorker.surname.substr(1,1)];
   //     })
 
 
   // }
-  filterAge(workerList,filterAge){
-  let res: MyWorker[]=workerList;
-  if (filterAge == 1) {
-    res.sort(function(a,b){
-      let age=new AgeService();
-      return age.age(a.date)-age.age(b.date);
-    })
-  }
-  if (filterAge == 2) {
-    res.sort(function(a,b){
-      let age=new AgeService();
-      return age.age(b.date)-age.age(a.date);
-    })
-  }
-  return res;
-  }
+  
 
 
 }
