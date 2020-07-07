@@ -3,13 +3,13 @@
     {
       "name": "Наталья",
       "surname": "Лукьянова",
-      "date": "1999-02-03",
       "patronimic": "Сергеевна",
+      "date": "1999-02-03",
       "email": "dfdsfsd@fdf.fdf",
-      "telephone": "+3(434) 534-5345",
-      "group": "191-323",
+      "group": "191-232",
+      "id": 29,
       "type": 0,
-      "id": 29
+      "telephone": "+3(434) 534-5345"
     },
     {
       "name": "Сергей",
@@ -54,17 +54,6 @@
       "group": "191-534",
       "type": 3,
       "id": 33
-    },
-    {
-      "name": "Ящер",
-      "surname": "Ященко",
-      "date": "2000-05-04",
-      "patronimic": "Ящерович",
-      "email": "dgfg@fdf.com",
-      "telephone": "+5(345) 345-3453",
-      "group": "181-544",
-      "type": 2,
-      "id": 34
     },
     {
       "name": "Антон",

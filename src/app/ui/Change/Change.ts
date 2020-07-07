@@ -123,6 +123,7 @@ export class ChangeFormComponent implements OnInit {
       let push:MyWorker=this.ChangeForm.value;
       push.id=this.OpenWorker.id;
       push.type=this.type;
+      push.group=this.CangeGroup;
       push.telephone=this.CangeTelephone;
       this.onChangeById(push)
       this.OpenWorker=push;
