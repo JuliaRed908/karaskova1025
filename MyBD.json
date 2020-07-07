@@ -34,15 +34,48 @@
       "id": 31
     },
     {
-      "name": "Андрей",
-      "surname": "Андреевич",
-      "date": "2019-06-09",
-      "patronimic": "Андреев",
-      "email": "fgdfg@fsdd.fd",
-      "telephone": "+3(243) 423-4234",
-      "group": "192-323",
-      "type": 0,
+      "name": "Александр",
+      "surname": "Нифёдов",
+      "date": "1997-11-16",
+      "patronimic": "Антонович",
+      "email": "gfgd@fd.fdf",
+      "telephone": "+3(423) 423-4234",
+      "group": "191-354",
+      "type": 1,
       "id": 32
+    },
+    {
+      "name": "Борис",
+      "surname": "Борисов",
+      "date": "1999-03-17",
+      "patronimic": "Борисович",
+      "email": "fgdfg@fdfs.fdf",
+      "telephone": "+4(534) 534-5345",
+      "group": "191-534",
+      "type": 3,
+      "id": 33
+    },
+    {
+      "name": "Ящер",
+      "surname": "Ященко",
+      "date": "2000-05-04",
+      "patronimic": "Ящерович",
+      "email": "dgfg@fdf.com",
+      "telephone": "+5(345) 345-3453",
+      "group": "181-544",
+      "type": 2,
+      "id": 34
+    },
+    {
+      "name": "Антон",
+      "surname": "Антонов",
+      "date": "1999-04-23",
+      "patronimic": "Антонович",
+      "email": "gdfgfd@fdf.fgg",
+      "telephone": "+4(535) 345-3453",
+      "group": "182-435",
+      "type": 3,
+      "id": 35
     }
   ]
 }

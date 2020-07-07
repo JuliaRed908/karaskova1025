@@ -30,7 +30,7 @@ export class WorkerListComponent {
   workers: MyWorker[]=[];
   myWorkerType = MyWorkerType;
   search: FormGroup;
-  
+  type=0;
   searchMode=true;
   workerType0=2;
   workerType1=1;
@@ -46,6 +46,9 @@ export class WorkerListComponent {
       email: new FormControl(null,[Validators.required]),
       telephone: new FormControl(null,[Validators.required]),
       group: new FormControl(null,[Validators.required]),
+
+      type: new FormControl(null,[Validators.required]),
+     
     });
     this.getData();  
   }

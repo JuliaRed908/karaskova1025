@@ -22,21 +22,13 @@ export class SortPipe implements PipeTransform {
           return element.group.indexOf(search.group)==0;
         }); 
     }
-// Type(type){
-//   if (type==0){return "IT"}
-//   else if (type==1){return "Маркетинг"}
-//   else if (type==2){return "Журналистика"}
-//   else if (type==3){return "Инженерия"}
-// }
-//     console.log(search.type);
-// if (search.type != null){
-//   res = res.filter(
-//     function (element){
-//       return element.type.toString().indexOf(search.type.toString())==0;
-//     }); 
-// }
-
-    
+if(search.type!= null){
+  res = res.filter(
+    function (element){
+      
+      return element.type.toString().indexOf(search.type.toString())==0;
+    }); 
+}
 
     res=this.filterID(res,filterID);
     res=this.filterAlf(res,filterAlf);

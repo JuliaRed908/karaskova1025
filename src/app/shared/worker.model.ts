@@ -13,6 +13,7 @@ export interface MyWorker {
 }
 
 export enum MyWorkerType {
+
   ItDepartment,
   Selldepartment,
   DeliveryDepartment,
