@@ -1,0 +1,26 @@
+{
+  "workers": [
+    {
+      "name": "yrty",
+      "surname": "tyrty",
+      "date": "2020-07-08",
+      "patronimic": "ryrty",
+      "email": "tryrty@gfdfg.fdg",
+      "telephone": "+5(345) 454-3545",
+      "group": "181-324",
+      "type": 0,
+      "id": 27
+    },
+    {
+      "name": "gfhfgh",
+      "surname": "ghgfh",
+      "patronimic": "yiuiuyi",
+      "date": "2020-07-01",
+      "email": "ftgdfg@fgg.dfg",
+      "group": null,
+      "id": 28,
+      "type": 2,
+      "telephone": "+4(534) 534-5345"
+    }
+  ]
+}

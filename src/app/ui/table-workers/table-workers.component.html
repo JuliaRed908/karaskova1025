@@ -1,0 +1,45 @@
+<ng-container *ngIf="workers.length > 0">
+  <div class="row ml-6 col-12">
+    <div class="col-12">
+      <h5 class=" mt-3">{{ title }}</h5>
+      <table class="table">
+        <thead >
+          <tr class="bg-light">
+            <th scope="col-1">№</th>
+            <th scope="col-3">Фамилия</th>
+            
+            <th scope="col-1">Инициалы</th>
+            <th scope="col-1">Группа</th>
+            <th scope="col-2">Направление</th>
+            <th scope="col-1"></th>
+            <th scope="col-1"></th>
+            
+          </tr>
+        </thead>
+        <tbody class="col-12">
+          <tr class="bg-light" *ngFor="let worker of workers">
+            <!------------------------------------------------------------>
+            <ng-container *ngIf="CheckHidden(worker.id)">
+              <th scope="row">{{ worker.id }}</th>   
+
+              <ng-container>
+                  <td>{{ worker.surname }}</td>
+                  
+                  <td>{{ getIO(worker.name,worker.patronimic) }}</td>
+                  <td>{{ worker.group }}</td>
+                  <td>{{ Type(worker.type) }}</td>
+                  <td>
+                    <button class="btn btn-outline-info btn-sm" (click)="onInfo(worker)">Редактировать</button> 
+                  </td> 
+              </ng-container>
+
+              <td>
+                <button class="btn btn-outline-danger btn-sm" (click)="onDeleteWorker(worker.id)">Удалить</button>
+              </td>
+            </ng-container>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</ng-container>

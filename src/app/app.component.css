@@ -1,0 +1,15 @@
+nav{
+    background-color: darkslategray;
+}
+.btn{
+    background-color: goldenrod;
+}
+
+.btn-while{
+    margin-left: 20px;
+}
+
+.text{
+    margin-left: 20px;
+    color:goldenrod;
+}
